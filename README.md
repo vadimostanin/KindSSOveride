@@ -21,7 +21,9 @@ Tested only at Kindle PW2 6th gen, FW 5.12.2.2
 5. Launch via KUAL menu "KindleScreensaverOverride" -> "Enable".
 
 ## Preparing images:
-- Using "https://e-ink.me/en/tools/kindle-screensaver"
-- - Open website, select image size compatible with your device 
-- - drag any image at website, select region at image and download result PNG
-- Rename all images "bg_ssXX".png, where XX are number from 00 to 99
+1. Adjust images size using:
+- Online editor "https://e-ink.me/en/tools/kindle-screensaver"
+- Or tutorial [3 Steps to Create a Kindle Screensaver: Open, Adjust, and Save](https://en.bookfere.com/post/create-kindle-screensaver.html)
+- Or any image editor
+
+2. Rename all images by template "bg_ssXX".png, where XX are number from 00 to 99
