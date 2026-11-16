@@ -2,7 +2,7 @@
 	"items": [
 	{
 		"name": "KindSSOveride",
-		"priority": -998,
+		"priority": 0,
 		"items": [
 		{
 			"name": "Enable",
