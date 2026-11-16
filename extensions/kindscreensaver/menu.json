@@ -1,14 +1,14 @@
 {
 	"items": [
 	{
-		"name": "KindSSOveride",
+		"name": "KindScreenSaver",
 		"priority": 0,
 		"items": [
 		{
 			"name": "Enable",
 			"priority": 0,
 			"action": "bin/enable.sh",
-			"params": "/mnt/us/screensavers/",
+			"params": "/mnt/us/screensaver/",
 			"status": false,
 			"exitmenu": false,
 			"internal": "status enable custom screensaver images"
