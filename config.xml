@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension>
+	<information>
+		<name>KindSSOveride</name>
+		<version>1.0</version>
+		<author>Vadym Ostanin</author>
+		<id>KindSSOveride</id>
+	</information>
+	<menus>
+		<menu type="json" dynamic="true">menu.json</menu>
+	</menus>
+</extension>
