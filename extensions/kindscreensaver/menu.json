@@ -2,16 +2,27 @@
 	"items": [
 	{
 		"name": "KindScreenSaver",
-		"priority": 0,
+		"priority": -990,
 		"items": [
 		{
 			"name": "Enable",
 			"priority": 0,
 			"action": "bin/enable.sh",
-			"params": "/mnt/us/screensaver/",
+			"params": "/usr/share/blanket/screensaver/ /mnt/us/screensaver/",
 			"status": false,
 			"exitmenu": false,
-			"internal": "status enable custom screensaver images"
+			"internal": "status enable custom screensaver images",
+			"if": "\"/usr/share/blanket/screensaver/\" -e"
+		},
+		{
+			"name": "Enable",
+			"priority": 0,
+			"action": "bin/enable.sh",
+			"params": "/opt/amazon/screen_saver/ /mnt/us/screensaver/",
+			"status": false,
+			"exitmenu": false,
+			"internal": "status enable custom screensaver images",
+			"if": "\"/opt/amazon/screen_saver/\" -e"
 		},
 		{
 			"name": "Disable",
