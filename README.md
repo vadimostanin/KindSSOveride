@@ -6,6 +6,10 @@ KindScreenSaver is KUAL extension for replacing system screensaver images to use
 
 Tested only at Kindle PW2 6th gen, FW 5.12.2.2
 
+## How it works
+By enabling it just mount system folder "/usr/share/blanket/screensaver/" to user folder "/mnt/us/screensaver".
+By disabling it just unmount user folder
+
 ## Prerequisites
 - Kindle is jailbreaked;
 - KUAL is installed
