@@ -1,5 +1,5 @@
 #!/bin/sh
 set -ex
-USERFOLDER=$1
-SYSTEMFOLDER=/usr/share/blanket/screensaver/
+SYSTEMFOLDER=$1
+USERFOLDER=$2
 mount --bind $USERFOLDER $SYSTEMFOLDER
