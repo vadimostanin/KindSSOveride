@@ -2,27 +2,27 @@
 
 ## Overview
 
-KindScreenSaver is KUAL extension for replacing system screensaver images to user images.
+KindScreenSaver is KUAL extension for replacing system screensaver images to user images, with automatic enabling after reboot.
 
 Tested only at Kindle PW2 6th gen, FW 5.12.2.2
 
 ## How it works
-- By enabling it just mount system folder "/usr/share/blanket/screensaver/" to user folder "/mnt/us/screensaver".
-- By disabling it just unmount user folder.
+- By enabling it mount system folder "/usr/share/blanket/screensaver/" to user folder "/mnt/us/screensaver" and register upstart service "kindscreensaver" to make possible automatic enable on reboot
+- By disabling it unmount user folder and remove upstart service.
 
 ## Prerequisites
 - Kindle is jailbreaked;
 - KUAL is installed
 - "/usr/share/blanket/screensaver/" is available, can be checked by "KTerm" extension.
 - - If no "/usr/share/blanket/screensaver/" then try find folder that contains files "bg_ss00.png" by "KTerm" command "find / -name bg_ss00.png"
-- - Replace found system folder at "extensions\kindscreensaver\bin\enable.sh" for variable "SYSTEMFOLDER="
+- - Replace found system folder at "extensions\kindscreensaver\menu.json" for first parameter to "enable.sh" script
 
 ## How to Install
 
 1. Grab the zip [GitHub repository](https://github.com/vadimostanin/KindSSOveride/archive/refs/heads/main.zip), unpack on /mnt/us/extensions as any other extension.
 2. Create folder "/mnt/us/screensaver"
 4. Copy images to "/mnt/us/screensaver", check that image size compatible with your device (for Kindle PW2 - 758x1024)
-5. Launch via KUAL menu "KindleScreensaverOverride" -> "Enable".
+5. Launch via KUAL menu "KindScreenSaver" -> "Enable".
 
 ## Preparing images:
 1. Adjust images size using:
