@@ -27,10 +27,20 @@
 		{
 			"name": "Disable",
 			"priority": 1,
-			"action": "bin/disable.sh",
+			"action": "bin/disable.sh /usr/share/blanket/screensaver/",
 			"status": false,
 			"exitmenu": false,
-			"internal": "status disable custom to system screensaver images"
+			"internal": "status disable custom to system screensaver images",
+			"if": "\"/usr/share/blanket/screensaver/\" -e"
+		},
+		{
+			"name": "Disable",
+			"priority": 1,
+			"action": "bin/disable.sh /opt/amazon/screen_saver/",
+			"status": false,
+			"exitmenu": false,
+			"internal": "status disable custom to system screensaver images",
+			"if": "\"/opt/amazon/screen_saver/\" -e"
 		}
 		]
 	}
